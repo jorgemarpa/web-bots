@@ -1,11 +1,13 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
 from bs4 import BeautifulSoup
 import pandas as pd
 import argparse
 
 
 def main(brand="transtion", model="spur"):
-    with webdriver.Chrome("/usr/local/bin/chromedriver") as driver:
+    with webdriver.Chrome(service=Service("/usr/local/bin/chromedriver")) as driver:
         search = f"{brand}+{model}"
         distance = 135
         url = (
