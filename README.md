@@ -2,7 +2,9 @@
 
 This is a collection of python scripts to do web scraping.
 
-- `check_cl.py` checks for bike ads in Craigslist. I can provide the bike brand and model using the keyword arguments `--brand` and `--model`. Here's an example:
+- `check_cl.py` and `check_pb.py` checks for bike ads in Craigslist and PinkBike.
+I can provide the bike brand and model using the keyword arguments
+`--brand` and `--model`. Here's an example:
 
 ```python
 ❯ python check_cl.py --brand transition --model spur
