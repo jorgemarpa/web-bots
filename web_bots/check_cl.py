@@ -69,7 +69,7 @@ def main(brand="transtion", model="spur"):
     ).T
 
     if df.shape[0] > 0:
-        print("I found the following ads:")
+        print(f"I found the following ads for {brand} {model} in Craigslist:")
         for k, row in df.iterrows():
             print(f"Result ({k+1})")
             print("\tAd   : ", row["name"])
