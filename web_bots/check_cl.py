@@ -77,6 +77,9 @@ def main(brand="transtion", model="spur"):
             print("\tDist : ", row["distance"])
             print("\tLoc  : ", row["location"])
             print("\tLink : ", row["url"])
+            print("_______________________________" * 2)
+    else:
+        print(f"I found no ads for {brand} {model}:")
 
     return
 
